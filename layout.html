@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <link rel=stylesheet type="text/css" href="mycss.css">
+</head>
+<body>
+  <div id="wrapper">
+    <div id="menubar">
+      
+      <div id="logo">
+        CodePlayer
+      </div>
+      
+      <div id="buttonDiv">
+        <button id="buttonRun">Run</button>
+      </div>
+      
+      <ul id="toggles">
+        <li class="toggle selected first">HTML</li>
+        <li class="toggle">CSS</li>
+        <li class="toggle">JS</li>
+        <li class="toggle selected last">Result</li>
+      </ul> 
+    
+    </div>
+    
+    <div class="clear"></div>
+    
+    <div class="codeContainer" id="HTMLContainer">
+      <div class="codeLabel">HTML</div>
+      <textarea id="htmltextarea">Example Code</textarea>
+    </div>
+    
+    <div class="codeContainer" id="CSSContainer">
+      <div class="codeLabel">CSS</div>
+      <textarea id="csstextarea">Example Code</textarea>
+    </div>
+    
+    
+    <div class="codeContainer" id="JSContainer">
+      <div class="codeLabel">JS</div>
+      <textarea id="jstextarea">Example Code</textarea>
+    </div>
+    
+    
+    <div class="codeContainer" id="ResultContainer">
+      <div class="codeLabel">Result</div>
+      <iframe id="resultframe"></iframe>
+    </div>
+    
+  </div>
+  <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+  <script src='myjs.js'></script>
+</body>
+</html>
